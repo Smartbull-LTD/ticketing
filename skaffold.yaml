@@ -1,0 +1,59 @@
+apiVersion: skaffold/v4beta13
+kind: Config
+build:
+  artifacts:
+    - image: smartbull/auth
+      context: .
+      sync:
+        manual:
+          - src: auth/src/**/*.ts
+            dest: ./auth
+      docker:
+        dockerfile: auth/Dockerfile
+    - image: smartbull/client
+      context: ./client
+      sync:
+        manual:
+          - src: "**/*.js"
+            dest: .
+      docker:
+        dockerfile: Dockerfile
+    - image: smartbull/tickets
+      context: .
+      sync:
+        manual:
+          - src: tickets/src/**/*.ts
+            dest: ./tickets
+      docker:
+        dockerfile: tickets/Dockerfile
+    - image: smartbull/orders
+      context: .
+      sync:
+        manual:
+          - src: orders/src/**/*.ts
+            dest: ./orders
+      docker:
+        dockerfile: orders/Dockerfile
+    - image: smartbull/expiration
+      context: .
+      docker:
+        dockerfile: expiration/Dockerfile
+      sync:
+        manual:
+          - src: expiration/src/**/*.ts
+            dest: ./expiration
+    - image: smartbull/payments
+      context: .
+      docker:
+        dockerfile: payments/Dockerfile
+      sync:
+        manual:
+          - src: payments/src/**/*.ts
+            dest: ./payments
+  local:
+    push: false
+manifests:
+  rawYaml:
+    - ./infra/k8s/*
+deploy:
+  kubectl: {}
