@@ -194,6 +194,22 @@ Verify the ingress controller is running:
 kubectl get pods -n ingress-nginx
 ```
 
+### Nginx error page showing instead of the app
+
+Sometimes, on existing Kubernetes installations, there might already be a loadbalancer installed (like Traefik), which can cause race conditions and override ingress-nginx. This results in a nginx error page showing on the host instead of the app.
+
+To check if Traefik exists:
+```bash
+kubectl get namespace
+```
+
+Look for `traefik` in the list. If it exists, delete it:
+```bash
+kubectl delete namespace traefik
+```
+
+Now the app should work properly.
+
 ### Port 80/443 already in use
 
 Stop any services using these ports (like Apache or another web server):
