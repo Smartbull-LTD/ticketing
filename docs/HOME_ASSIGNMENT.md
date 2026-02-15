@@ -183,4 +183,63 @@ There is no single correct solution. We care much more about your **reasoning** 
 
 ---
 
+## Submission Instructions
+
+### 1. Fork the repository
+
+Fork this repository into your own GitHub account.
+
+Work only on your fork.
+
+Please do not open a pull request to the original repository.
+
+### 2. Time limit
+
+Maximum time to spend: **10 hours**
+
+Please do not exceed this limit.
+
+It is completely acceptable to submit a partial solution if clearly explained.
+
+We value scope control and decision-making as much as completeness.
+
+### 3. Repository submission
+
+When you are done:
+
+- Create a **private repository** under your own GitHub account.
+- Push your solution there.
+- Grant access to:
+  - `eyal@smartbull.co.il`
+  - `noam@smartbull.co.il`
+- Send us the repository link by email.
+
+### 4. Include a README
+
+Your repository must include a **README** that explains:
+
+- Your data ownership decisions
+- How services integrate
+- Event flow and duplication strategy
+- Testing approach
+- Trade-offs you made
+- What you would improve with more time
+
+During the follow-up interview, we will discuss these decisions.
+
+### 5. Confidentiality
+
+This assignment is proprietary and confidential.
+
+Please do not:
+- Share the repository publicly
+- Publish your solution
+- Distribute the assignment materials
+
+If anything is unclear while working on the assignment, feel free to ask clarifying questions.
+
+---
+
+We're looking forward to reviewing your work.
+
 Good luck, and enjoy the exercise! 🎫
