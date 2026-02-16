@@ -195,7 +195,7 @@ Please do not open a pull request to the original repository.
 
 ### 2. Time limit
 
-Maximum time to spend: **24 hours**
+Maximum time to spend: **48 hours**
 
 Please do not exceed this limit.
 
