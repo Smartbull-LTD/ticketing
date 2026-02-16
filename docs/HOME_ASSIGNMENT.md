@@ -18,7 +18,7 @@ The goal is not to build a perfect or complete system, but to demonstrate how yo
 | | |
 |---|---|
 | **Timebox** | Up to 2 days |
-| **Expected effort** | ~8–12 hours |
+| **Expected effort** | ~16 hours |
 
 Please manage scope intentionally. It is better to ship a smaller, well-reasoned solution than a large, unfinished one.
 
@@ -195,7 +195,7 @@ Please do not open a pull request to the original repository.
 
 ### 2. Time limit
 
-Maximum time to spend: **10 hours**
+Maximum time to spend: **24 hours**
 
 Please do not exceed this limit.
 
